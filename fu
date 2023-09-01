@@ -1,0 +1,10 @@
+function Reverse(milestones,donelistid){
+    loadMilestones();
+     for(let i=0;i<donelistid.children.length;i++){
+       const count=donelistid.children[i].id;
+      //  console.log(count);
+       const  milestonesid=document.getElementById(count);
+       milestones.removeChild(milestonesid);
+
+     }
+ }
